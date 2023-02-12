@@ -15,6 +15,7 @@
 		E8D6FD7E2998E99A0073C5CF /* NetworkStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FD7D2998E99A0073C5CF /* NetworkStudyTests.swift */; };
 		E8D6FD882998E99A0073C5CF /* NetworkStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FD872998E99A0073C5CF /* NetworkStudyUITests.swift */; };
 		E8D6FD8A2998E99A0073C5CF /* NetworkStudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FD892998E99A0073C5CF /* NetworkStudyUITestsLaunchTests.swift */; };
+		E8D6FD972998EDD10073C5CF /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FD962998EDD10073C5CF /* NetworkAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E8D6FD832998E99A0073C5CF /* NetworkStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D6FD872998E99A0073C5CF /* NetworkStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStudyUITests.swift; sourceTree = "<group>"; };
 		E8D6FD892998E99A0073C5CF /* NetworkStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8D6FD962998EDD10073C5CF /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				E8D6FD662998E9970073C5CF /* AppDelegate.swift */,
 				E8D6FD682998E9970073C5CF /* SceneDelegate.swift */,
 				E8D6FD6A2998E9970073C5CF /* ViewController.swift */,
+				E8D6FD962998EDD10073C5CF /* NetworkAPI.swift */,
 				E8D6FD6F2998E99A0073C5CF /* Assets.xcassets */,
 				E8D6FD712998E99A0073C5CF /* LaunchScreen.storyboard */,
 				E8D6FD742998E99A0073C5CF /* Info.plist */,
@@ -257,6 +260,7 @@
 				E8D6FD6B2998E9970073C5CF /* ViewController.swift in Sources */,
 				E8D6FD672998E9970073C5CF /* AppDelegate.swift in Sources */,
 				E8D6FD692998E9970073C5CF /* SceneDelegate.swift in Sources */,
+				E8D6FD972998EDD10073C5CF /* NetworkAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
