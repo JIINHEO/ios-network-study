@@ -80,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				E8D6FD652998E9970073C5CF /* NetworkStudy */,
+				E8D6FD98299CF8DC0073C5CF /* View */,
+				E8D6FD9A299CF92D0073C5CF /* Network */,
 				E8D6FD7C2998E99A0073C5CF /* NetworkStudyTests */,
 				E8D6FD862998E99A0073C5CF /* NetworkStudyUITests */,
 				E8D6FD642998E9970073C5CF /* Products */,
@@ -101,8 +103,6 @@
 			children = (
 				E8D6FD662998E9970073C5CF /* AppDelegate.swift */,
 				E8D6FD682998E9970073C5CF /* SceneDelegate.swift */,
-				E8D6FD6A2998E9970073C5CF /* ViewController.swift */,
-				E8D6FD962998EDD10073C5CF /* NetworkAPI.swift */,
 				E8D6FD6F2998E99A0073C5CF /* Assets.xcassets */,
 				E8D6FD712998E99A0073C5CF /* LaunchScreen.storyboard */,
 				E8D6FD742998E99A0073C5CF /* Info.plist */,
@@ -125,6 +125,22 @@
 				E8D6FD892998E99A0073C5CF /* NetworkStudyUITestsLaunchTests.swift */,
 			);
 			path = NetworkStudyUITests;
+			sourceTree = "<group>";
+		};
+		E8D6FD98299CF8DC0073C5CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8D6FD6A2998E9970073C5CF /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8D6FD9A299CF92D0073C5CF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E8D6FD962998EDD10073C5CF /* NetworkAPI.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
