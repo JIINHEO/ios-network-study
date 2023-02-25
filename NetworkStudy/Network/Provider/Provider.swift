@@ -16,6 +16,12 @@ protocol Provider {
 }
 
 class ProviderImpl: Provider {
+    
+    let session: URLSessionable
+    init(session: URLSessionable = URLSession.shared) {
+        self.session = session
+    }
+    
     func request<R, E>(with endpoint: E, completion: @escaping (Result<R, Error>) -> Void) where R : Decodable, R == E.Response, E : RequestResponsable {
         do {
             let urlRequest = try endpoint.getUrlReauest()
@@ -44,12 +50,7 @@ class ProviderImpl: Provider {
             })
         }.resume()
     }
-    
-    let session: URLSession
-    init(session: URLSession = URLSession.shared) {
-        self.session = session
-    }
-    
+
     private func checkError(with data: Data?, _ response: URLResponse?, _ error: Error?, completion: @escaping (Result<Data, Error>) -> ()) {
         if let error = error {
             completion(.failure(error))
