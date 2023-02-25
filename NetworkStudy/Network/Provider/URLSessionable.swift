@@ -14,11 +14,9 @@ import Foundation
 /// dataTask 구현의 경우 진짜 URLSession 안에 dataTask가 이미 있으므로 구현한 것으로 친다.
 
 protocol URLSessionable {
-    func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLRequest?, Error?) -> Void) -> URLSessionDataTask
+    func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
     
-    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLRequest?, Error?) -> Void) -> URLSessionDataTask
+    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
 }
 
-extension URLSession: URLSessionable {
-    
-}
+extension URLSession: URLSessionable {}

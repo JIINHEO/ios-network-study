@@ -25,6 +25,7 @@
 		E8D6FDAF29AA18380073C5CF /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDAE29AA18380073C5CF /* Provider.swift */; };
 		E8D6FDB129AA213B0073C5CF /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDB029AA213B0073C5CF /* APIEndpoints.swift */; };
 		E8D6FDB329AA23970073C5CF /* URLSessionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDB229AA23970073C5CF /* URLSessionable.swift */; };
+		E8D6FDB529AA28BF0073C5CF /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDB429AA28BF0073C5CF /* MockURLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		E8D6FDAE29AA18380073C5CF /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		E8D6FDB029AA213B0073C5CF /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		E8D6FDB229AA23970073C5CF /* URLSessionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionable.swift; sourceTree = "<group>"; };
+		E8D6FDB429AA28BF0073C5CF /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				E8D6FDA2299E5FF60073C5CF /* Constants.swift */,
 				E8D6FDA8299E61E90073C5CF /* NetworkError.swift */,
 				E8D6FDB029AA213B0073C5CF /* APIEndpoints.swift */,
+				E8D6FDB429AA28BF0073C5CF /* MockURLSession.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				E8D6FDA9299E61E90073C5CF /* NetworkError.swift in Sources */,
 				E8D6FDA7299E605A0073C5CF /* Requestable.swift in Sources */,
 				E8D6FDB129AA213B0073C5CF /* APIEndpoints.swift in Sources */,
+				E8D6FDB529AA28BF0073C5CF /* MockURLSession.swift in Sources */,
 				E8D6FD6B2998E9970073C5CF /* ViewController.swift in Sources */,
 				E8D6FDAD29A9FC560073C5CF /* Ednpoint.swift in Sources */,
 				E8D6FDA5299E60380073C5CF /* Responsable.swift in Sources */,
