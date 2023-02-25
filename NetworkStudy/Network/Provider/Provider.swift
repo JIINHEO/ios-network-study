@@ -7,6 +7,16 @@
 
 import Foundation
 
+struct User: Decodable {
+    let id: Int
+    let name: String
+}
+
+enum CustomError: Error {
+    case statusCodeError
+    case unknownError
+}
+
 protocol Provider {
     /// 특정 responsable이 존재하는 request
     func request<R: Decodable, E: RequestResponsable>(with endpoint: E, completion: @escaping (Result<R, Error>) -> Void) where E.Response == R
@@ -41,6 +51,24 @@ class ProviderImpl: Provider {
         } catch {
             completion(.failure(NetworkError.urlRequest(error)))
         }
+    }
+    
+    func dataTask(request: URLRequest, completionHandler: @escaping (Result<Data, CustomError>) -> Void) {
+
+        let task = session.dataTask(with: request) { data, urlResponse, error in
+
+            guard let httpResponse = urlResponse as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                return completionHandler(.failure(.statusCodeError))
+            }
+
+            if let data = data {
+                return completionHandler(.success(data))
+            }
+
+            completionHandler(.failure(.unknownError))
+        }
+        task.resume()
     }
     
     func request(_ url: URL, completion: @escaping (Result<Data, Error>) -> ()) {
@@ -83,4 +111,16 @@ class ProviderImpl: Provider {
             return .failure(NetworkError.emptyData)
         }
     }
+    
+    func getUser(id: Int, completionHandler: @escaping (Result<Data, CustomError>) -> Void) {
+        let baseURL = "https://www.testwebpage.com/"
+        
+        guard let url = URL(string: baseURL) else { return }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
+        dataTask(request: request, completionHandler: completionHandler)
+    }
+    
 }
