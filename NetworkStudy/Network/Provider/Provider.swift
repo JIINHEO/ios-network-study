@@ -25,7 +25,7 @@ protocol Provider {
     func request(_ url: URL, completion: @escaping (Result<Data, Error>) -> ())
 }
 
-class ProviderImpl: Provider {
+class URLSessionProvider: Provider {
     
     let session: URLSessionable
     init(session: URLSessionable = URLSession.shared) {

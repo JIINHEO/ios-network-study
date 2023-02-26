@@ -11,7 +11,7 @@ import XCTest
 class URLSessionProviderTest: XCTestCase {
     
     let mockSession = MockURLSession()
-    var sut: ProviderImpl!
+    var sut: URLSessionProvider!
     
 
     override func setUpWithError() throws {

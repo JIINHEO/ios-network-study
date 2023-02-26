@@ -23,7 +23,6 @@
 		E8D6FDAB299E64EB0073C5CF /* Extension+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDAA299E64EB0073C5CF /* Extension+Encodable.swift */; };
 		E8D6FDAD29A9FC560073C5CF /* Ednpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDAC29A9FC560073C5CF /* Ednpoint.swift */; };
 		E8D6FDAF29AA18380073C5CF /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDAE29AA18380073C5CF /* Provider.swift */; };
-		E8D6FDB129AA213B0073C5CF /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDB029AA213B0073C5CF /* APIEndpoints.swift */; };
 		E8D6FDB329AA23970073C5CF /* URLSessionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDB229AA23970073C5CF /* URLSessionable.swift */; };
 		E8D6FDB529AA28BF0073C5CF /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDB429AA28BF0073C5CF /* MockURLSession.swift */; };
 		E8D6FDB729AA2FA90073C5CF /* URLSessionProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D6FDB629AA2FA90073C5CF /* URLSessionProviderTest.swift */; };
@@ -67,7 +66,6 @@
 		E8D6FDAA299E64EB0073C5CF /* Extension+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Encodable.swift"; sourceTree = "<group>"; };
 		E8D6FDAC29A9FC560073C5CF /* Ednpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ednpoint.swift; sourceTree = "<group>"; };
 		E8D6FDAE29AA18380073C5CF /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
-		E8D6FDB029AA213B0073C5CF /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		E8D6FDB229AA23970073C5CF /* URLSessionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionable.swift; sourceTree = "<group>"; };
 		E8D6FDB429AA28BF0073C5CF /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		E8D6FDB629AA2FA90073C5CF /* URLSessionProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProviderTest.swift; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				E8D6FD962998EDD10073C5CF /* NetworkAPI.swift */,
 				E8D6FDA2299E5FF60073C5CF /* Constants.swift */,
 				E8D6FDA8299E61E90073C5CF /* NetworkError.swift */,
-				E8D6FDB029AA213B0073C5CF /* APIEndpoints.swift */,
 				E8D6FDB429AA28BF0073C5CF /* MockURLSession.swift */,
 			);
 			path = Network;
@@ -333,7 +330,6 @@
 				E8D6FDA3299E5FF70073C5CF /* Constants.swift in Sources */,
 				E8D6FDA9299E61E90073C5CF /* NetworkError.swift in Sources */,
 				E8D6FDA7299E605A0073C5CF /* Requestable.swift in Sources */,
-				E8D6FDB129AA213B0073C5CF /* APIEndpoints.swift in Sources */,
 				E8D6FDB529AA28BF0073C5CF /* MockURLSession.swift in Sources */,
 				E8D6FD6B2998E9970073C5CF /* ViewController.swift in Sources */,
 				E8D6FDAD29A9FC560073C5CF /* Ednpoint.swift in Sources */,
