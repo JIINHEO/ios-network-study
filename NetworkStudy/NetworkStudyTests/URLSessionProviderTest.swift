@@ -12,8 +12,8 @@ class URLSessionProviderTest: XCTestCase {
     
     let mockSession = MockURLSession()
     var sut: URLSessionProvider!
-    
 
+    // 각각의 test case가 실행되기 전마다 호출되어 각 테스트가 모두 같은 상태와 조건에서 실행될 수 있도록 만들어줄 수 있는 메서드다.
     override func setUpWithError() throws {
         sut = .init(session: mockSession)
     }
@@ -54,10 +54,14 @@ class URLSessionProviderTest: XCTestCase {
         
     }
 
+    // 각각의 test 실행이 끝난 후마다 호출되는 메서드, 보통 setUpWithError()에서 설정한 값들을 해제할 때 사용된다.
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    // test로 시작하는 메서드들은 작성해야 할 test case가 되는 메서드다.
+    // 테스트할 내용을 메서드로 작성해 볼 수 있다.
+    // 메서드 네이밍은 무조건 test로 시작되어야 한다.
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
